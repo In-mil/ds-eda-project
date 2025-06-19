@@ -21,3 +21,5 @@
 - **long** - Longitude coordinate
 - **sqft_living15** - The square footage of interior housing living space for the nearest 15 neighbors
 - **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
+
+
