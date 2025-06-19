@@ -5,6 +5,7 @@
 - **pricePrice** - is prediction target
 - **bedroomsNumber** - # of bedrooms
 - **bathroomsNumber** - # of bathrooms
+
 - **sqft_livingsquare** - footage of the home
 - **sqft_lotsquare** - footage of the lot
 - **floorsTotal** - floors (levels) in house
