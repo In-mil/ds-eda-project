@@ -18,11 +18,11 @@ and finish with  recommendations for one exemplar client.
 ## Repository Structure
 
 ```text
-├─ data/                          # Raw data (not tracked – in .gitignore)
+├─ data/                          
 │   └─ 20250618_King_county_house_sales_ks_JOIN.csv
 │   └─ df1_understanding_the_data.csv
 │   └─ eda.csv
-│   └─ offer_list_nj.csv
+│
 ├─ notebooks/                     # Step‑by‑step EDA in Jupyter
 │   ├─ 1_Understanding_the_Data.ipynb
 │   ├─ 2_Research_Questions_and_Hypothesis_Generation.ipynb
@@ -30,19 +30,24 @@ and finish with  recommendations for one exemplar client.
 │   └─ 4_Customer_assignment_NJ.ipynb
 │
 ├─ reports/                       # Exported PDF slides & dashboard snapshots
-    ├─ 20250618_offer_overview_NJ.csv
-    ├─ 20250619_offer_overview_NJ.pdf
-    ├─ EDA_Miro_board.pdf
-    ├─ 
-├─ scripts/                       # Helper Python scripts (feature builds, plots)
-    ├─
-    ├─
-    ├─ 
-    ├─ 
-    ├─   
+│   └─ 20250619_offer_overview_NJ.pdf
+│   └─ 20250619_offer_overview_NJ.xlsx
+│   └─ EDA_Miro_board.pdf
+│   └─ options_for_customer.csv
+│   └─ figures/
+│       └─ 0001_tbb
+│       └─ 0002_tbb
+│       └─ 0003_tbb
+│       └─ 0004_tbb
+├─ scripts/                      
+│   ├─ 1_Understanding_the_Data.py
+│   ├─ 3_Exploring_the_Data.py
+│   └─ 4_Customer_assignment_NJ.py
 ├─ requirements.txt
 └─ README.md                      # ← you are here
 ```
+
+
 
 ## Prerequisites
 
@@ -95,7 +100,7 @@ and finish with  recommendations for one exemplar client.
 | `waterfront`, `view` | Binary/ordinal view flags |
 | `condition`, `grade` | Overall quality scores |
 | `sqft_above`, `sqft_basement` | Split of living area |
-| `yr_built`, `yr_renovated` | Construction / renovation year |
+| `yr_built`, `yr_renovated` | Construction / renovation year *(converted to 'int')* |
 | `zipcode`, `lat`, `long` | Location |
 | `sqft_living15`, `sqft_lot15` | Neighbourhood (15 nearest) averages |
 
@@ -106,7 +111,7 @@ and finish with  recommendations for one exemplar client.
 
 | Persona | Needs | Deliverable |
 |---------|-------|------------|
-| **Nicole Johnson** *(buyer)* | Lively, central neighbourhood • mid‑range budget • move within ≤12 mo | Interactive dashboard + shortlist CSV + 5‑slide PDF |
+| **Nicole Johnson** *(buyer)* | Lively, central neighbourhood • mid‑range budget • move within ≤12 mo | dashboard overview + shortlist CSV |
 
 ---
 
